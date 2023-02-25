@@ -6,6 +6,8 @@ import {
 	VictoryChart,
 	VictoryAxis,
 	VictoryTransition,
+	VictoryScatter,
+	VictoryLabel,
 } from "victory";
 
 export const MainPage: FC = (): JSX.Element => {
@@ -20,7 +22,7 @@ export const MainPage: FC = (): JSX.Element => {
 
 	return (
 		<div>
-			<VictoryChart animate={{ duration: 2000 }}>
+			<VictoryChart>
 				<VictoryAxis
 					tickValues={["Понеділок", "Вівторок", "Середа", "Четверг", "Пятниця", "Субота"]}
 				/>
